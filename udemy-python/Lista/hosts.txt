@@ -1,0 +1,11 @@
+maxitv.com.br
+177.184.133.160
+zabbix.maxitv.com.br
+191.7.52.40
+css1.maxitv.com.br
+45.6.23.2
+pss2.maxitv.com.br
+45.6.23.3
+pss3.maxitv.com.br
+191.7.215.214
+
