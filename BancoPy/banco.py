@@ -15,7 +15,7 @@ def main() -> None:
 def menu() -> None:
     print('=====================================')
     print('============== ATM ==================')
-    print('=========== Geek Bank ===============')
+    print('=========== BENTO BANK ===============')
     print('=====================================')
 
     print('Selecione uma opção no menu: ')
