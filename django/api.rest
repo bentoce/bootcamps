@@ -1,0 +1,6 @@
+GET https://api.linkedin.com/v2/people/id=-f_Ut43FoQ?projection=(id,localizedFirstName,localizedLastName) 
+{
+    "id": "-f_Ut43FoQ",
+    "localizedFirstName": "Dwight",
+    "localizedLastName": "Schrute"
+}

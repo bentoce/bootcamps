@@ -5,8 +5,9 @@
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/udemy-python/venv" />
       <excludeFolder url="file://$MODULE_DIR$/CursoJava/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/devmedia" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.9 (bootcamp)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (bootcamps)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

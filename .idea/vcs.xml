@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/desafios-bootcamps" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ruby_rails/javascript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ruby_rails/json-server" vcs="Git" />
   </component>
 </project>

@@ -1,0 +1,7 @@
+POST https://portal1.maxitv.com.br/administration/ HTTP/1.1
+Content-Type: application/json
+{
+  "identifier": "suporte@maxitv.com.br",
+  "password": "maxi123tv"
+}
+#####

@@ -1,0 +1,753 @@
+{
+	"info": {
+		"_postman_id": "56d42184-495a-44b7-b4b9-2e4fddd0e835",
+		"name": "TV - CYBERINFO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?login=cyberinfo&senha=block123cyber&action=PartnerLogin",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "cyberinfo"
+						},
+						{
+							"key": "senha",
+							"value": "block123cyber"
+						},
+						{
+							"key": "action",
+							"value": "PartnerLogin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarCliente",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=CadastrarCustomer&email=tiago@elitesof.com.br&senha=tb123!!",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "CadastrarCustomer"
+						},
+						{
+							"key": "email",
+							"value": "tiago@elitesof.com.br"
+						},
+						{
+							"key": "senha",
+							"value": "tb123!!"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarDispositivoPartner",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=CadastrarDispositivosPartner&hardware_id=af4949fe-afe6-47d5-9036-e5d3deeb6c3e&id_customer=21303",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "CadastrarDispositivosPartner"
+						},
+						{
+							"key": "hardware_id",
+							"value": "af4949fe-afe6-47d5-9036-e5d3deeb6c3e"
+						},
+						{
+							"key": "id_customer",
+							"value": "21303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AutorizarCliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=AutorizarCustomer&email=tiago@elitesof.com.br&id=21303",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "AutorizarCustomer"
+						},
+						{
+							"key": "email",
+							"value": "tiago@elitesof.com.br"
+						},
+						{
+							"key": "id",
+							"value": "21303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTokenUsuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=GetDeviceActionCode&id=21303",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "GetDeviceActionCode"
+						},
+						{
+							"key": "id",
+							"value": "21303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LancarPlanoUsuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=GetVendorCustomerByPortalId&id=21303",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "GetVendorCustomerByPortalId"
+						},
+						{
+							"key": "id",
+							"value": "21303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarDispositivoPartner",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=ListarDispositivos&id=21303",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "ListarDispositivos"
+						},
+						{
+							"key": "id",
+							"value": "21303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LancarPlanoUsuario2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=LancarPlanoTv&id=21303&uuid_planotv=bb09efab-f16c-404f-834d-d3c91340ae49",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "LancarPlanoTv"
+						},
+						{
+							"key": "id",
+							"value": "21303"
+						},
+						{
+							"key": "uuid_planotv",
+							"value": "bb09efab-f16c-404f-834d-d3c91340ae49"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarCliente",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?provider_id=7&texto=&action=listarCustomer&offset=0&limit=10",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "provider_id",
+							"value": "7"
+						},
+						{
+							"key": "texto",
+							"value": ""
+						},
+						{
+							"key": "action",
+							"value": "listarCustomer"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarClienteById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?provider_id=7&texto=&action=listarCustomer&offset=0&limit=10",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "provider_id",
+							"value": "7"
+						},
+						{
+							"key": "texto",
+							"value": ""
+						},
+						{
+							"key": "action",
+							"value": "listarCustomer"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletarPlanoCliente",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?provider_id=7&texto=&action=listarCustomer&offset=0&limit=10",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "provider_id",
+							"value": "7"
+						},
+						{
+							"key": "texto",
+							"value": ""
+						},
+						{
+							"key": "action",
+							"value": "listarCustomer"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarPlano",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?provider_id=7&texto=&action=listarPlanosTv&offset=0&limit=10",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "provider_id",
+							"value": "7"
+						},
+						{
+							"key": "texto",
+							"value": ""
+						},
+						{
+							"key": "action",
+							"value": "listarPlanosTv"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarFornecedorCliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?id=21303&action=GetVendorCustomerByPortalId",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "21303"
+						},
+						{
+							"key": "action",
+							"value": "GetVendorCustomerByPortalId"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Relatorio Cliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjciLCJwcm92aWRlcl9pZCI6IjciLCJhZG1pbnVzZXJfaWQiOiIxNiIsImRlc2NwIjoiQ1lCRVIgSU5GTyBQUk9WRURPUiBERSBBQ0VTU08gTFREQSAiLCJsb2dpbiI6ImN5YmVyaW5mbyIsInNlbmhhIjoiYmxvY2sxMjNjeWJlciIsImFwaV9sb2dpbiI6ImpvYW9AY3liZXJpbmZvLm5ldC5iciIsImFwaV9zZW5oYSI6ImdiYzIwMTJjZWNpIiwibWFzdGVyIjoiMCIsIm9yZ0lkIjoiMDYzNzEzNzcwMDAxMzMiLCJzdHJlZXQiOiJBViBKT1NFIEdJRkZPTkUgREEgU0lMVkVJUkEsIDE3NTEiLCJ0b3duIjoiQUNBUkFVIC0gQ0UiLCJ6aXAiOiI2MjU4MC0wMDAiLCJhdGl2byI6IjEiLCJ3ZWJzaXRlIjoiIiwiZXhwaXJlc0luIjoiMSBkYXkifQ.LcQTliCrfk7hUZv-qI9MKfhLZ_rJJ6EmRL5UzO0hcGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://partner.maxitv.com.br/maxitv.php?action=GetVendorCustomerByPortalId&id=21303",
+					"protocol": "http",
+					"host": [
+						"partner",
+						"maxitv",
+						"com",
+						"br"
+					],
+					"path": [
+						"maxitv.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "GetVendorCustomerByPortalId"
+						},
+						{
+							"key": "id",
+							"value": "21303"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
